@@ -10,13 +10,17 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    var index = [];
-    for (var i = 0; i < nums.length-1; i++) { 
-        for (var j =0; j < nums.length; j++) {
-            if (nums[i] + nums[j] == target) {
-                index = [i, j];
-            }
+    const map = new Map();
+  
+    for (let i = 0; i < nums.length; i++) {
+        const x = target - nums[i];
+    
+        if (map.has(x)) {
+            return [map.get(x), i];
         }
+        
+        map.set(nums[i], i);
     }
-    return index;
+
+    return [];
 };
