@@ -36,6 +36,7 @@ def main():
         else:
             print('\nExiting...')
             exit()
+            return
         
 # Outputting the fibonacci run
 def run_fib(n, run = 0): # n is the value entered by the users, run is the counter/tracker to ensure function is not executing more than needed
