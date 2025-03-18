@@ -5,9 +5,7 @@ C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS
 Code, Compile, Run and Debug online from anywhere in world.
 '''
 
-#importing necessary libraries
-import array
-
+# Global variable to store the fibonacci sequence
 fibSequence = []
 
 #main function
